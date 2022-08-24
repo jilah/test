@@ -15,9 +15,11 @@
     <link integrity="" rel="stylesheet" href="css/default.css">
     <link integrity="" rel="stylesheet" href="css/button.css">
 
-    <style>img{width:100%;height: auto;}</style>
+    <style>img{width:100%;height: auto;}input[type="file"]{display:none;}label{font-family:sans-serif;color:cornflowerblue;}#filename{display:inline-block;margin-bottom:10px;border:0px;}label:hover{background-color:yellow;}</style>
 
     <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2a19ad17e3.js"></script>
   </head>
   <body>
     
@@ -42,11 +44,12 @@
     <p>
 
     <p>
-    <form name="upLoad" onsubmit="return validateForm()" required>
-    Name: <input id="fileInput" type="file" />
-    </br>
-    <input class="button-3" id="dpwload" onclick="drawImage()" type="submit" value="Pratinjau">
-    </form>
+    <input type="text" id="filename" autocomplete="off" readonly="" placeholder="Tidak ada file yang diunggah.">
+    <br />
+    <label for="fileInput" class="custom-file-upload">
+    <i class="text-button"></i> <i class="fas fa-plus"></i> UPLOAD GAMBAR BARU
+    <input id="fileInput" type="file" />
+    </label>
     </p>
 
     <p>
