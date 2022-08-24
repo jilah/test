@@ -11,7 +11,7 @@
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
   background-color: #000;
-  background-image: none;
+  background-color: #ddd;
   color: #fff;
   cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
