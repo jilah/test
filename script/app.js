@@ -35,3 +35,10 @@ function drawImage() {
 $("#fileInput").change(function() {
   readURL(this);
 });
+
+// return chosen filename to additional input
+$('#fileInput').change(function(e) {
+  var filename = $('#fileInput').val().split('\\').pop();
+  $('#filename').val(filename);
+  $('#filename').focus();
+});
