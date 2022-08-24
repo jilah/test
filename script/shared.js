@@ -4,7 +4,7 @@ button.addEventListener('click', function(evt){
   if (navigator.share !== undefined) {
     navigator.share({
       title: 'Twibbon Generator',
-      url  : ''
+      url  : 'https://bap.pages.dev/'
     })
     .then(() => console.log('Shared successfully'))
     .catch((error) => console.log('An error has occurred'));
