@@ -15,6 +15,8 @@
     <link integrity="" rel="stylesheet" href="css/default.css">
     <link integrity="" rel="stylesheet" href="css/button.css">
 
+    <style>img{width:100%;height: auto;}</style>
+
     <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
   </head>
   <body>
@@ -33,12 +35,16 @@
       copies of the Software, and to permit persons to whom the Software is
       furnished to do so, subject to the following conditions:</p>
 
-    <p>The above copyright notice and this permission notice shall be included in
-      all copies or substantial portions of the Software.</p>
+    <p>
+    <img id="preview" src="img/image.png"/>
+    <img id="twibbon" src="img/twibbon.png" style="display: none"/>
+    <canvas id="jilah" style="width: 300px; height: 300px; display: none"></canvas>
+    <p>
 
     <p>
     <form name="upLoad" action="/" onsubmit="return validateForm()" method="post" required>
     Name: <input id="fileInput" type="file" name="fileInput" />
+    </br>
     <input class="button-3" id="dpwload" onclick="drawImage()" type="submit" value="Pratinjau">
     </form>
     </p>
