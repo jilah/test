@@ -1,4 +1,4 @@
-const button = document.getElementById('share-button');
+const button = document.getElementById('share');
 button.addEventListener('click', function(evt){
   evt.preventDefault();
   if (navigator.share !== undefined) {
